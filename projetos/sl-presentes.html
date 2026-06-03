@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SL Presentes | Sistema de E-commerce Completo</title>
+
+  <meta name="description" content="Sistema de e-commerce completo com gestão de produtos, estoque, pedidos, clientes e checkout integrado com PIX.">
+  <meta name="author" content="Alisson Lira">
+  <meta name="keywords" content="e-commerce, loja virtual, gestão de estoque, sistema de vendas, flask, python">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="../styles.css">
+  
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-highlight">&lt;/&gt;</span> Alisson Lira
+    </div>
+    <nav>
+      <a href="/"><i class="fas fa-home"></i> Home</a>
+      <a href="#funcionalidades"><i class="fas fa-star"></i> Funcionalidades</a>
+      <a href="#demo"><i class="fas fa-shopping-cart"></i> Como Funciona</a>
+      <a href="#acesso"><i class="fas fa-rocket"></i> Acessar</a>
+    </nav>
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- HERO PRODUTO -->
+  <section class="produto-hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        E-commerce em Produção
+      </div>
+
+      <h1>SL Presentes</h1>
+
+      <p>
+        Sistema completo de e-commerce com gestão de produtos, estoque em tempo real,
+        painel administrativo, checkout via PIX e muito mais. Tudo que sua loja precisa.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="https://slpresentes.alissonlira.com.br" target="_blank" class="btn-primary">
+          <i class="fas fa-store"></i> Visitar Loja
+        </a>
+
+        <a href="#" class="btn-secondary" target="_blank">
+          <i class="fab fa-github"></i> Ver Código
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="secao bg-light">
+    <h2><i class="fas fa-exclamation-triangle"></i> Desafio</h2>
+
+    <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--gray);">
+      Empreendedores que querem vender online enfrentam dificuldades com plataformas 
+      genéricas que não atendem suas necessidades específicas. Falta de controle 
+      real sobre estoque, dificuldade na gestão de pedidos e altas taxas de 
+      plataformas prontas são desafios constantes.
+    </p>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section class="secao bg-dark">
+    <h2 style="color: white;"><i class="fas fa-lightbulb"></i> Solução</h2>
+
+    <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--gray-light);">
+      O SL Presentes é um e-commerce desenvolvido sob medida, com todas as 
+      funcionalidades que uma loja virtual precisa: catálogo de produtos, 
+      carrinho de compras, gestão de estoque em tempo real, painel administrativo 
+      completo e checkout integrado com PIX.
+    </p>
+  </section>
+
+  <!-- MÉTRICAS DEMONSTRATIVAS -->
+  <section id="demo" class="secao bg-light">
+    <h2><i class="fas fa-chart-line"></i> Números da Loja</h2>
+
+    <div class="stats-demo">
+      <div class="stat-card">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Produtos em Catálogo</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">1.200+</div>
+        <div class="stat-label">Pedidos Realizados</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Clientes Satisfeitos</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Disponibilidade</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES -->
+  <section id="funcionalidades" class="secao bg-light">
+    <h2><i class="fas fa-cogs"></i> Funcionalidades Completas</h2>
+
+    <div class="grid-features">
+
+      <div class="feature">
+        <i class="fas fa-boxes"></i>
+        <h3>Gestão de Produtos</h3>
+        <p>Cadastro completo de produtos com categorias, preços, descrições, imagens e controle de estoque em tempo real.</p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-chart-line"></i>
+        <h3>Controle de Estoque</h3>
+        <p>Sistema inteligente que atualiza automaticamente o estoque a cada venda e emite alertas quando necessário repor.</p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-shopping-cart"></i>
+        <h3>Carrinho de Compras</h3>
+        <p>Carrinho intuitivo com cálculo automático de frete, aplicação de cupons e resumo completo do pedido.</p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-qrcode"></i>
+        <h3>Checkout PIX Integrado</h3>
+        <p>Sistema de pagamento via PIX com geração automática de QR Code e confirmação instantânea.</p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-tachometer-alt"></i>
+        <h3>Painel Administrativo</h3>
+        <p>Dashboard completo para gerenciar pedidos, produtos, clientes e acompanhar métricas da loja.</p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-users"></i>
+        <h3>Gestão de Clientes</h3>
+        <p>Cadastro de clientes com histórico de compras, endereços múltiplos e segmentação para marketing.</p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-truck"></i>
+        <h3>Cálculo de Frete</h3>
+        <p>Integração com APIs de correios para cálculo automático de frete com múltiplas opções de entrega.</p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-chart-pie"></i>
+        <h3>Relatórios e Métricas</h3>
+        <p>Relatórios de vendas, produtos mais vendidos, ticket médio e análise de desempenho da loja.</p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-envelope"></i>
+        <h3>Notificações Automáticas</h3>
+        <p>E-mails automáticos de confirmação de pedido, atualização de status e recuperação de carrinho abandonado.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FLUXO DE COMPRA -->
+  <section class="secao bg-dark">
+    <h2 style="color: white;"><i class="fas fa-sync-alt"></i> Fluxo de Compra do Cliente</h2>
+
+    <div class="workflow">
+      <div class="workflow-step">
+        <div class="workflow-number">1</div>
+        <h3 style="color: white;">Navega</h3>
+        <p>Cliente navega pelo catálogo de produtos</p>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-number">2</div>
+        <h3 style="color: white;">Adiciona</h3>
+        <p>Adiciona produtos ao carrinho</p>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-number">3</div>
+        <h3 style="color: white;">Finaliza</h3>
+        <p>Informa endereço e escolhe frete</p>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-number">4</div>
+        <h3 style="color: white;">Paga</h3>
+        <p>Realiza pagamento via PIX</p>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-number">5</div>
+        <h3 style="color: white;">Recebe</h3>
+        <p>Acompanha e recebe o pedido</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="secao bg-light">
+    <h2><i class="fas fa-desktop"></i> Interface do Sistema</h2>
+
+    <div class="screenshots">
+      <img src="../img/sl1.png" alt="Página inicial SL Presentes" onclick="openModal(this.src)">
+      <img src="../img/sl2.png" alt="Painel administrativo" onclick="openModal(this.src)">
+      <img src="../img/sl3.png" alt="Checkout e PIX" onclick="openModal(this.src)">
+    </div>
+    <p style="text-align: center; margin-top: 1rem; font-size: 0.875rem; color: var(--gray);">
+      <i class="fas fa-mouse-pointer"></i> Clique nas imagens para ampliar
+    </p>
+  </section>
+
+  <!-- STACK TECNOLÓGICA -->
+  <section class="secao bg-dark">
+    <h2 style="color: white;"><i class="fas fa-code"></i> Stack Tecnológica</h2>
+
+    <div class="stack">
+      <span><i class="fab fa-python"></i> Python 3.11</span>
+      <span><i class="fas fa-flask"></i> Flask 2.3</span>
+      <span><i class="fas fa-database"></i> SQLAlchemy</span>
+      <span><i class="fas fa-database"></i> PostgreSQL</span>
+      <span><i class="fab fa-html5"></i> HTML5</span>
+      <span><i class="fab fa-css3-alt"></i> CSS3</span>
+      <span><i class="fab fa-js"></i> JavaScript</span>
+      <span><i class="fas fa-qrcode"></i> PIX API</span>
+      <span><i class="fas fa-cloud"></i> Render</span>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="secao bg-light">
+    <h2><i class="fas fa-gem"></i> Diferenciais do Sistema</h2>
+
+    <div class="grid-features">
+      <div class="feature">
+        <i class="fas fa-bolt"></i>
+        <h3>Performance Otimizada</h3>
+        <p>Sistema rápido e responsivo, garantindo melhor experiência para o usuário e melhor ranqueamento em buscadores.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Segurança</h3>
+        <p>Proteção contra ataques comuns, hash de senhas e proteção de dados sensíveis dos clientes.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Design Responsivo</h3>
+        <p>Interface adaptada para todos os dispositivos, de smartphones a desktops.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-chart-simple"></i>
+        <h3>SEO Amigável</h3>
+        <p>Estrutura otimizada para mecanismos de busca, aumentando a visibilidade da loja.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="acesso" class="secao">
+    <div class="cta">
+      <h2><i class="fas fa-play"></i> Conheça o SL Presentes</h2>
+      <p style="margin-bottom: 2rem;">Acesse a loja e veja todas as funcionalidades em ação</p>
+
+      <a href="https://slpresentes.alissonlira.com.br" target="_blank" class="btn-primary">
+        <i class="fas fa-store"></i> Visitar Loja Agora
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-highlight">&lt;/&gt;</span> Alisson Lira
+        <p>Desenvolvedor Back-End</p>
+      </div>
+      
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#demo">Como Funciona</a>
+        <a href="#acesso">Acessar</a>
+      </div>
+      
+      <div class="footer-social">
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/5583991887166" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Alisson Lira - Todos os direitos reservados</p>
+      <p class="footer-last-update">
+        <i class="fas fa-code"></i> Desenvolvido com Flask, Python e paixão por e-commerce
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal para imagens -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="modal-close">&times;</span>
+    <img id="modalImage" src="" alt="Imagem ampliada">
+  </div>
+
+  <script>
+    // Menu mobile
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const nav = document.querySelector('.navbar nav');
+    
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (nav && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+          }
+        }
+      });
+    });
+
+    // Modal
+    function openModal(src) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      modal.classList.add('active');
+      modalImg.src = src;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('imageModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alisson Lira | Desenvolvedor Back-End</title>
+
+  <meta name="description" content="Portfólio de Alisson Lira - Desenvolvedor Back-End especializado em Python, Flask e Django. Criando sistemas web completos e soluções escaláveis.">
+  <meta name="author" content="Alisson Lira">
+  <meta name="keywords" content="desenvolvedor back-end, python, flask, django, programador web, portfólio">
+
+  <!-- Favicon (opcional - pode adicionar depois) -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Google Fonts para fontes mais modernas -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-highlight">&lt;/&gt;</span> Alisson Lira
+    </div>
+
+    <nav>
+      <a href="#projetos"><i class="fas fa-code"></i> Sistemas</a>
+      <a href="#sobre"><i class="fas fa-user"></i> Sobre</a>
+      <a href="#contato"><i class="fas fa-envelope"></i> Contato</a>
+    </nav>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponível para oportunidades
+      </div>
+
+      <h1>
+        Transformo <span class="highlight">ideias</span> em<br>
+        sistemas que <span class="highlight">funcionam</span>
+      </h1>
+
+      <p>
+        Desenvolvedor Back-End especializado em Python, Flask e Django. 
+        Crio aplicações web completas, escaláveis e focadas em resolver 
+        problemas reais do mundo dos negócios.
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">1+</span>
+          <span class="stat-label">anos de código</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">2+</span>
+          <span class="stat-label">projetos entregues</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">comprometimento</span>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#projetos" class="btn-primary">
+          <i class="fas fa-arrow-down"></i> Ver Sistemas
+        </a>
+        <a href="#contato" class="btn-secondary">
+          <i class="fas fa-comment"></i> Vamos conversar
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-code-animation">
+      <div class="code-window">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre class="code-content">
+<span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-method">__init__</span>(self):
+        self.name = <span class="code-string">"Alisson Lira"</span>
+        self.role = <span class="code-string">"Back-End Developer"</span>
+        self.skills = [<span class="code-string">"Python"</span>, <span class="code-string">"Flask"</span>, <span class="code-string">"Django"</span>]
+        self.passion = <span class="code-string">"solve real problems"</span>
+    
+    <span class="code-keyword">def</span> <span class="code-method">create_solutions</span>(self):
+        <span class="code-keyword">return</span> <span class="code-string">"🚀 Building the future"</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- SISTEMAS -->
+  <section id="projetos" class="projetos">
+    <div class="section-header">
+      <span class="section-tag">Portfólio</span>
+      <h2>Sistemas em <span class="highlight">destaque</span></h2>
+      <p>Projetos desenvolvidos para resolver necessidades específicas de negócios</p>
+    </div>
+
+    <div class="grid">
+
+      <!-- SL PRESENTES - CORRIGIDO -->
+      <div class="card">
+        <div class="card-image">
+          <img src="img/SL Presentes.png" alt="SL Presentes - E-commerce Completo">
+          <div class="card-overlay">
+            <span class="project-type">E-commerce</span>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3>SL Presentes</h3>
+          <p class="card-description">
+            E-commerce completo com gestão de produtos, estoque em tempo real, 
+            painel administrativo, carrinho de compras e checkout integrado com PIX.
+          </p>
+
+          <div class="stack">
+            <span><i class="fab fa-python"></i> Flask</span>
+            <span><i class="fas fa-database"></i> SQLAlchemy</span>
+            <span><i class="fas fa-database"></i> PostgreSQL</span>
+            <span><i class="fas fa-qrcode"></i> PIX</span>
+          </div>
+
+          <div class="card-buttons">
+            <a href="https://sl-presentes.alissonlira.com.br" target="_blank" class="card-btn demo">
+              <i class="fas fa-external-link-alt"></i> Demo
+            </a>
+            <a href="https://github.com/Deelira/sl-presentes-commerce-platform" target="_blank" class="card-btn code">
+              <i class="fab fa-github"></i> Código
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SISTEMA OFICINA -->
+      <div class="card">
+        <div class="card-image">
+          <img src="img/Pajeu.png" alt="Sistema de Oficina - Gestão de Serviços">
+          <div class="card-overlay">
+            <span class="project-type">SaaS</span>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3>Sistema de Oficina</h3>
+          <p class="card-description">
+            Sistema web para gerenciamento de serviços de funilaria e pintura, 
+            com ordens de serviço, dashboard com métricas, gestão de clientes e veículos.
+          </p>
+
+          <div class="stack">
+            <span><i class="fab fa-python"></i> Django</span>
+            <span><i class="fas fa-database"></i> PostgreSQL</span>
+            <span><i class="fas fa-chart-line"></i> Chart.js</span>
+            <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+          </div>
+
+          <div class="card-buttons">
+            <a href="#" target="_blank" class="card-btn demo">
+              <i class="fas fa-external-link-alt"></i> Demo em breve
+            </a>
+            <a href="#" target="_blank" class="card-btn code">
+              <i class="fab fa-github"></i> Código em breve
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOVO PROJETO - Em desenvolvimento 
+      <div class="card coming-soon">
+        <div class="card-image">
+          <div class="coming-soon-bg">
+            <i class="fas fa-code-branch"></i>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3>Em desenvolvimento</h3>
+          <p>Novo projeto em breve. Acompanhe meu GitHub para novidades!</p>
+          <div class="stack">
+            <span><i class="fab fa-python"></i> Python</span>
+            <span><i class="fas fa-cloud"></i> Cloud</span>
+          </div>
+        </div>
+      </div>
+      -->
+
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <div class="sobre-container">
+      <div class="sobre-image">
+        <img src="/img/perfil.png" alt="Minha foto" class="foto-perfil">
+        <div class="tech-icons">
+          <i class="fab fa-python"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-git-alt"></i>
+          <i class="fas fa-database"></i>
+        </div>
+      </div>
+
+      <div class="sobre-content">
+        <span class="section-tag">Quem sou</span>
+        <h2>Desenvolvedor apaixonado por <span class="highlight">criar soluções</span></h2>
+        
+        <p>
+          Sou desenvolvedor com sólida experiência em desenvolvimento web, 
+          focado na criação de sistemas completos que resolvem problemas reais. 
+          Trabalho principalmente com <strong>Python, Flask e Django</strong>, desenvolvendo 
+          aplicações escaláveis, seguras e funcionais.
+        </p>
+
+        <p>
+          Minha abordagem combina boas práticas de desenvolvimento, código limpo 
+          e foco na experiência do usuário para entregar produtos de alta qualidade.
+        </p>
+
+        <div class="skills">
+          <div class="skill-category">
+            <h4><i class="fas fa-code"></i> Back-End</h4>
+            <ul>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>Django</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h4><i class="fas fa-database"></i> Banco de Dados</h4>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>SQLite</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h4><i class="fas fa-tools"></i> Ferramentas</h4>
+            <ul>
+              <li>Git/GitHub</li>
+              <li>Docker</li>
+              <li>Linux</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#contato" class="btn-primary">Vamos trabalhar juntos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+    <div class="contato-container">
+      <div class="contato-info">
+        <span class="section-tag">Contato</span>
+        <h2>Vamos <span class="highlight">conversar?</span></h2>
+        <p>Estou sempre aberto a novas oportunidades, parcerias e projetos interessantes.</p>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:alisson.lira.dev@gmail.com">alisson.lira.dev@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/5583991887166" target="_blank">(83) 99188-7166</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/Deelira" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/alissonlira" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://wa.me/5583991887166" target="_blank" class="social-link">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contato-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Seu email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="assunto" placeholder="Assunto">
+        </div>
+        <div class="form-group">
+          <textarea id="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">
+          <i class="fas fa-paper-plane"></i> Enviar mensagem
+        </button>
+        <p class="form-note" id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-highlight">&lt;/&gt;</span> Alisson Lira
+        <p>Desenvolvedor Back-End</p>
+      </div>
+      
+      <div class="footer-links">
+        <a href="#projetos">Sistemas</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+      
+      <div class="footer-social">
+        <a href="https://github.com/Deelira" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/alissonlira" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/5583991887166" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Alisson Lira - Todos os direitos reservados</p>
+      <p class="footer-last-update">Última atualização: Janeiro 2026</p>
+    </div>
+  </footer>
+
+  <!-- Script para menu mobile e interações -->
+  <script>
+    // Menu mobile
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const nav = document.querySelector('.navbar nav');
+    
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    }
+
+    // Smooth scroll para links do menu
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          // Fechar menu mobile se estiver aberto
+          if (nav.classList.contains('active')) {
+            nav.classList.remove('active');
+          }
+        }
+      });
+    });
+
+    // Formulário de contato simples
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formMessage = document.getElementById('formMessage');
+        formMessage.innerHTML = '📧 Mensagem enviada! Entrarei em contato em breve.';
+        formMessage.style.color = '#10b981';
+        contactForm.reset();
+        setTimeout(() => {
+          formMessage.innerHTML = '';
+        }, 5000);
+      });
+    }
+  </script>
+</body>
+</html>

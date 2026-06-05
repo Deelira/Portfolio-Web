@@ -33,6 +33,7 @@ body {
     color: var(--dark);
     line-height: 1.6;
     overflow-x: hidden;
+    user-select: none;
 }
 
 /* Scrollbar personalizada */
@@ -233,6 +234,11 @@ h3 {
 .hero-buttons {
     display: flex;
     gap: 1rem;
+    cursor: pointer;
+}
+
+.hero-buttons.sl-presentes {
+    justify-content: center;
 }
 
 .btn-primary,
@@ -1573,4 +1579,228 @@ canvas {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+}
+
+
+.logo a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card,
+.skill-category,
+.stat {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .6s ease;
+}
+
+.card.show,
+.skill-category.show,
+.stat.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar.scrolled {
+    backdrop-filter: blur(15px);
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+}
+
+.navbar nav a.active {
+    color: var(--primary-color);
+}
+
+/* =========================
+   SECTION RESULTADOS
+========================= */
+
+.resultados {
+    padding: 120px 8%;
+    position: relative;
+}
+
+.resultados .section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.resultados .section-header h2 {
+    margin: 15px 0;
+}
+
+.resultados .section-header p {
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.resultados .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.resultados .card {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    transition: all .35s ease;
+
+    height: 100%;
+}
+
+.resultados .card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #60a5fa
+    );
+
+    transform: scaleX(0);
+
+    transition: .35s ease;
+
+    transform-origin: left;
+}
+
+.resultados .card:hover::before {
+    transform: scaleX(1);
+}
+
+.resultados .card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(96,165,250,.3);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.25);
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.resultados .card-content {
+    padding: 35px;
+}
+
+.resultados .card-content h3 {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+    font-size: 1.35rem;
+
+    color: #2563eb;
+}
+
+
+/* =========================
+   LISTA
+========================= */
+
+.resultados .card-content ul {
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.resultados .card-content li {
+
+    position: relative;
+
+    padding-left: 28px;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+.resultados .card-content li::before {
+
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #10b981;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   ANIMAÇÃO
+========================= */
+
+.resultados .card {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity .6s ease,
+        transform .6s ease;
+}
+
+.resultados .card.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+    .resultados {
+        padding: 90px 5%;
+    }
+
+    .resultados .card-content {
+        padding: 25px;
+    }
+
+    .resultados .card-content h3 {
+        font-size: 1.2rem;
+    }
 }
